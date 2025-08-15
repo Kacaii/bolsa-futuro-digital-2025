@@ -7,6 +7,8 @@ ascii_calculadora = """┏┓  ┓   ┓   ┓
 
 
 def main():
+    "  Ponto de partida do programa"
+
     calc = Calculadora()
 
     #   Loop principal --------------------------------------------------------
@@ -21,20 +23,20 @@ def main():
             y = float(input(f"Insira o segundo número para: {operacao}\n  > "))
         except ValueError:
             print("Número inválido")
-            return
+            continue
 
         match operacao:
             case "1" | "+" | "soma" | "somar" | "adicionar" | "adicao" | "adição":
-                print("Resultado:", calc.somar(x=x, y=y))
+                print("\n  > Resultado:", calc.somar(x=x, y=y), "\n")
 
             case "2" | "-" | "subtrair" | "subtracao" | "adição":
-                print("Resultado:", calc.subtrair(x=x, y=y))
+                print("\n  > Resultado:", calc.subtrair(x=x, y=y), "\n")
 
             case "3" | "*" | "x" | "multiplicar" | "multiplicacao" | "multiplicação":
-                print("Resultado:", calc.multiplicar(x=x, y=y))
+                print("\n  > Resultado:", calc.multiplicar(x=x, y=y), "\n")
 
             case "4" | "/" | "dividir" | "divisão":
-                print("Resultado:", calc.dividir(x=x, y=y))
+                print("\n  > Resultado:", calc.dividir(x=x, y=y), "\n")
 
             case "":
                 return
