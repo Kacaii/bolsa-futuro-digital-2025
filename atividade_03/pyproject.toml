@@ -5,13 +5,11 @@ description = ""
 authors = [{ name = "Kacaii", email = "kacaii.privado@gmail.com" }]
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["pytest (>=8.4.1,<9.0.0)"]
+dependencies = []
 
 [tool.poetry]
 packages = [{ include = "app", from = "src" }]
 
-[tool.poetry.scripts]
-start = "app.main:main"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

@@ -1,4 +1,4 @@
-from i_calculadora.calculadora import Calculadora
+from app.calculadora import Calculadora
 
 ascii_calculadora = """┏┓  ┓   ┓   ┓
 ┃ ┏┓┃┏┓┏┃┏┓┏┫┏┓┏┓┏┓
