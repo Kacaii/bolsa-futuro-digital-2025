@@ -1,13 +1,12 @@
 def main():
     # input --------------------------------------------------------------------
-    numero: float = 2.0
-    print(f"Valor inicial: {numero}")
-
-    numero_expoente = float(input("Insira um valor:\n > "))
-    numero **= numero_expoente
+    primeiro_valor: float = 10.50
+    segundo_valor: float = 12.00
 
     # output -------------------------------------------------------------------
-    print(f"Valor final: {numero}")
+    print(
+        f"primeiro_valor é diferente de segundo_valor? {primeiro_valor != segundo_valor}"
+    )
 
 
 if __name__ == "__main__":

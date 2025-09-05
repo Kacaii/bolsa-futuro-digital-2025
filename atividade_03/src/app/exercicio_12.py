@@ -1,13 +1,10 @@
 def main():
     # input --------------------------------------------------------------------
-    numero: float = 2.0
-    print(f"Valor inicial: {numero}")
-
-    numero_expoente = float(input("Insira um valor:\n > "))
-    numero **= numero_expoente
+    tem_wifi: bool = False
+    tem_dados_moveis: bool = True
 
     # output -------------------------------------------------------------------
-    print(f"Valor final: {numero}")
+    print(f"O celular pode se conectar a internet? {tem_wifi or tem_dados_moveis}")
 
 
 if __name__ == "__main__":

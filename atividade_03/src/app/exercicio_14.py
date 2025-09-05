@@ -1,13 +1,11 @@
 def main():
     # input --------------------------------------------------------------------
-    numero: float = 2.0
-    print(f"Valor inicial: {numero}")
-
-    numero_expoente = float(input("Insira um valor:\n > "))
-    numero **= numero_expoente
+    esta_chovendo = True
+    nao_esta_chovendo = not esta_chovendo
 
     # output -------------------------------------------------------------------
-    print(f"Valor final: {numero}")
+    print(f"Está chovendo: {esta_chovendo}")
+    print(f"Não está chovendo: {nao_esta_chovendo}")
 
 
 if __name__ == "__main__":

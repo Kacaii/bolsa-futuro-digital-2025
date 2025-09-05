@@ -1,13 +1,10 @@
 def main():
     # input --------------------------------------------------------------------
-    numero: float = 2.0
-    print(f"Valor inicial: {numero}")
-
-    numero_expoente = float(input("Insira um valor:\n > "))
-    numero **= numero_expoente
+    nome_a: str = "Python"
+    nome_b: str = "python"
 
     # output -------------------------------------------------------------------
-    print(f"Valor final: {numero}")
+    print(f"nome_a é igual a nome_b? {nome_a == nome_b}")
 
 
 if __name__ == "__main__":

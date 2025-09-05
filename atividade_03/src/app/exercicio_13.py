@@ -1,13 +1,15 @@
+import random
+
+
 def main():
     # input --------------------------------------------------------------------
-    quantidade_estoque: int = 50
-    print(f"Estoque inicial: {quantidade_estoque}")
+    valor_idade = random.randint(a=0, b=20)
+    possui_carteira = True
 
-    valor = int(input("Insira um valor:\n > "))
-    quantidade_estoque += valor
+    pode_dirigir = valor_idade >= 18 and possui_carteira
 
     # output -------------------------------------------------------------------
-    print(f"Estoque final: {quantidade_estoque}")
+    print(f"O usuário pode dirigir? {pode_dirigir}")
 
 
 if __name__ == "__main__":
